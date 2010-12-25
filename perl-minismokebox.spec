@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    A backend to App::SmokeBox::Mini
 License:    GPL+ or Artistic
@@ -46,6 +46,7 @@ least one the POE::Session manpage.
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
+export PERL_MM_USE_DEFAULT=1 PERL_AUTOINSTALL="--skipdeps --alldeps"
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 
 %make
