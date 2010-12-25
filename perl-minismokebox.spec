@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 3
 
 Summary:    A backend to App::SmokeBox::Mini
 License:    GPL+ or Artistic
@@ -20,6 +20,7 @@ BuildRequires: perl(HTTP::Date)
 BuildRequires: perl(HTTP::Response)
 BuildRequires: perl(Module::Load)
 BuildRequires: perl(Module::Pluggable)
+BuildRequires: perl(Net::IP)
 BuildRequires: perl(POE)
 BuildRequires: perl(POE::Component::SmokeBox)
 BuildRequires: perl(POE::Component::SmokeBox::Dists)
