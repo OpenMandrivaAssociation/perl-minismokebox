@@ -1,9 +1,9 @@
 %define upstream_name    minismokebox
-%define upstream_version 0.40
+%define upstream_version 0.44
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 1
 
 Summary:    A backend to App::SmokeBox::Mini
 License:    GPL+ or Artistic
