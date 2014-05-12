@@ -1,11 +1,12 @@
 %define upstream_name    minismokebox
-%define upstream_version 0.44
+%define upstream_version 0.58
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	A backend to App::SmokeBox::Mini
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
@@ -66,19 +67,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.440.0-2mdv2011.0
-+ Revision: 657477
-- rebuild for updated spec-helper
-
-* Mon Mar 14 2011 Guillaume Rousse <guillomovitch@mandriva.org> 0.440.0-1
-+ Revision: 644767
-- update to new version 0.44
-
-* Sat Dec 25 2010 Shlomi Fish <shlomif@mandriva.org> 0.400.0-3mdv2011.0
-+ Revision: 625110
-- Add Net::IP as an explicit dep
-- Set the CPAN distro Just-f-do-it (JFDI) environment vars
-- Upgraded to 0.40
-- import perl-minismokebox
 
