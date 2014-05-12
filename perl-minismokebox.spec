@@ -13,6 +13,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/App/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(POE::XS::Loop::EPoll)
 BuildRequires:	perl(App::SmokeBox::PerlVersion)
 BuildRequires:	perl(Config::Tiny)
 BuildRequires:	perl(ExtUtils::MakeMaker)
