@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	A backend to App::SmokeBox::Mini
 
@@ -67,5 +67,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_mandir}/man1/*
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-
